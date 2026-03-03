@@ -4,7 +4,7 @@
 - Server-Client 구조의 숫자 야구 게임을 구현하였다.  
 - Server는 select() 기반 다중 접속 TCP 서버이다.  
 - Client가 3개의 숫자를 선택하는 방식을 process와 thread를 활용하여 구현하였다.  
-  - 0-9 까지의 인자를 갖는 process/thread 10개를 생성하여 랜덤한 숫자 3개를 선택하게 하였다.  
+  - 0-9 까지의 인자를 갖는 process/thread 10개를 생성하여 경쟁시켜 랜덤한 숫자 3개를 선택하게 하였다.  
   - 선택된 숫자 3개는 배열에 저장되며, 동시성 문제 해결을 위해 mutex를 사용하였다.  
 
 => TCP 통신, mutex, process, thread를 활용한 프로젝트 구현.
