@@ -109,7 +109,7 @@ int main(int argc, char *argv[]) {
 			    if (clnt_socks[j] == i) {
 			        clnt_socks[j] = clnt_socks[--clnt_count];
 		       		
-		       		//참가자 전원 통과 시 게임 종료
+		       	//모든 client 연결 종료 시 프로그램 종료
 				if(clnt_count==0) exit(1);
 			        
 			        break;
