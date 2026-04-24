@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	//소켓 생성
-	serv_sock = socket(PF_INET, SOCK_STREAM, 0);
+	serv_sock = socket(AF_INET, SOCK_STREAM, 0);
 	//오류 시
 	if (serv_sock == -1)
 	error_handling("socket() error");
@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
 		error_handling("bind() error");		//에러 발생 시
 
 	//listen(연결 대기)
-	if (listen(serv_sock, 3) == -1)
+	if (listen(serv_sock, MAX_CLNT) == -1)
 		error_handling("listen() error");	//에러 발생 시
 
 	FD_ZERO(&reads);		//reads 집합 초기화
