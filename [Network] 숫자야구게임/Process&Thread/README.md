@@ -10,6 +10,8 @@
 ```
 
 ### [프로젝트 결과]
+<img width="505" height="274" alt="Image" src="https://github.com/user-attachments/assets/178435d2-9844-48e8-979e-77fd6c0866da" />
+<br><br>
 프로젝트를 통해 확인한 점은 크게 세 가지였습니다.
 
 1) 실행 단위가 1개일 때는 process와 thread의 실행 시간이 거의 비슷하게 측정되었습니다. 단일 스레드 프로세스 기준에서는 실행 흐름이 1개라는 점에서 유사하게 보일 수 있었습니다.
